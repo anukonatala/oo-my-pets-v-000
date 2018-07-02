@@ -46,7 +46,12 @@ def feed_fish
 end
 
 def sell_pets
-   @pets = {:fishes=>[], :dogs=>[], :cats=>[]}
+    @pets.collect do |species, instances|
+      instances.each do |pet|
+        pet.mood = "nervous"
+      end
+      instances.clear
+    end
 end
 
 def list_pets
