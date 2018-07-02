@@ -13,10 +13,6 @@ class Owner
     @@all << self
   end
   
-  def name
-    @name = "Katie"
-  end
-  
   def species
     @species 
   end
