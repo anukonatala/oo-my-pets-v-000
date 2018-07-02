@@ -21,9 +21,6 @@ class Owner
       "I am a human." unless @species != "human"
   end
   
-  def name
-  end
-  
   def pets
   end
   
