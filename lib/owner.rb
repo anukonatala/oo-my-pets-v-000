@@ -9,7 +9,7 @@ class Owner
   
   def initialize(species)
     @species = species
-
+    @pets = {:fishes=>[], :dogs=>[], :cats=>[]}
     @@all << self
   end
   
@@ -21,14 +21,9 @@ class Owner
       "I am a human." unless @species != "human"
   end
   
-  def pets
-    @pets = {:fishes=>[], :dogs=>[], :cats=>[]}
-  end
   
   def buy_fish(name)
-    newfish = Fish.new(name)
-    @pets[:fishes] << newfish
-    @pets
+    @pets[:fishes] << Fish.new(name)
   end
   
   def buy_cat(name)
