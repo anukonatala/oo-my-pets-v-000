@@ -52,7 +52,7 @@ def sell_pets
       end
       instances.clear
     end
-    binding.ory
+    binding.pry
 end
 
 def list_pets
