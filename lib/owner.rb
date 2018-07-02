@@ -34,7 +34,7 @@ class Owner
     @pets[:dogs] << Dog.new(name)
   end
   
-  def walks_dogs
+  def walk_dogs
   end
   
   def play_with_cats
