@@ -18,7 +18,7 @@ class Owner
   
   def say_species
       binding.pry
-      "I am a human." unless @species == "human"
+      "I am a human." unless @species != "human"
   end
   
   def name
