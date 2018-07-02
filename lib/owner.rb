@@ -5,12 +5,17 @@ class Owner
   
   attr_accessor :pets, :name
   attr_reader :species
+  attr_writer :name
   @@all = []
   
   def initialize(species)
     @species = species
     @name = "Katie"
     @@all << self
+  end
+  
+  def name=(name)
+    @name = name
   end
   
   def species
