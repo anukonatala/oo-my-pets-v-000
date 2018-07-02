@@ -9,7 +9,7 @@ class Owner
   
   def initialize(species,name)
     @species = species
-    @name = "Katie"
+    @name = name
     binding.pry
     @@all << self
   end
