@@ -7,8 +7,9 @@ class Owner
   attr_reader :species
   @@all = []
   
-  def initialize(species)
-    @species = species
+  def initialize(name)
+    @name = name
+    @species = "human"
     @@all << self
   end
   
