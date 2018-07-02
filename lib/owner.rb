@@ -46,12 +46,10 @@ def feed_fish
 end
 
 def sell_pets
-    @pets.collect do |species, instances|
-      instances.each do |pet|
-        pet.mood = "nervous"
-      end
-      instances.clear
-    end
+     pets.each do |type, pets|
++      pets.map {|pet| pet.mood = "nervous"}
++    end
++    pets.clear
 
 end
 
